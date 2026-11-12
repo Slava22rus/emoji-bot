@@ -61,9 +61,9 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Генерируем уникальное имя пака: должно заканчиваться на _by_<bot_username>
     suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
-    pack_name = f"pack_{user_id}_{suffix}_by_{BOT_USERNAME}"
+    pack_name = f"pack_{user_id}_{suffix}_by_{@my_sticker_maker_11_2026_bot}"
     # Ссылка на бота встраивается в НАЗВАНИЕ пака — это и есть бесплатное распространение
-    pack_title = f"Создай свой: t.me/{BOT_USERNAME}"
+    pack_title = f"Создай свой: t.me/{@my_sticker_maker_11_2026_bot}"
 
     try:
         await context.bot.create_new_sticker_set(
